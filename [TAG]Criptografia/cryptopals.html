@@ -12996,10 +12996,8 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -13010,12 +13008,49 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
-.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+    </style>
+<style type="text/css">
+    
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+
     </style>
 
 
@@ -13084,12 +13119,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[160]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># !/usr/bin/env python3.6</span>
 <span class="kn">import</span> <span class="nn">textwrap</span>
-<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d&quot;</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736</span><span class="se">\</span>
+<span class="s2">f6e6f7573206d757368726f6f6d&quot;</span>
 </pre></div>
 
     </div>
@@ -13110,17 +13146,19 @@ validator16to2: confere se a conversão de hexa pra binário está certa</code><
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">https://cryptopals.com/sets/1/challenges/1</span>
 <span class="sd">hex -&gt; base64</span>
-<span class="sd">hex: 49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d</span>
+<span class="sd">hex: 49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f\</span>
+<span class="sd">7573206d757368726f6f6d</span>
 <span class="sd">output : SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t</span>
 <span class="sd">&#39;&#39;&#39;</span>
 <span class="k">def</span> <span class="nf">validator</span><span class="p">(</span><span class="n">output</span><span class="p">):</span>
-    <span class="n">b64string</span> <span class="o">=</span> <span class="s2">&quot;SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t&quot;</span>
+    <span class="n">b64string</span> <span class="o">=</span> <span class="s2">&quot;SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hy</span><span class="se">\</span>
+<span class="s2">    b29t&quot;</span>
     <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">b64string</span><span class="p">)</span> <span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FFrom hex to b64 with success!&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">True</span>
@@ -13131,7 +13169,12 @@ validator16to2: confere se a conversão de hexa pra binário está certa</code><
     <span class="k">return</span> <span class="kc">False</span>
 
 <span class="k">def</span> <span class="nf">validator16to2</span><span class="p">(</span><span class="n">output</span><span class="p">):</span>
-    <span class="n">binstring</span> <span class="o">=</span> <span class="s2">&quot;010010010010011101101101001000000110101101101001011011000110110001101001011011100110011100100000011110010110111101110101011100100010000001100010011100100110000101101001011011100010000001101100011010010110101101100101001000000110000100100000011100000110111101101001011100110110111101101110011011110111010101110011001000000110110101110101011100110110100001110010011011110110111101101101&quot;</span>
+    <span class="n">binstring</span> <span class="o">=</span> <span class="s2">&quot;010010010010011101101101001000000110101101101001011011000110</span><span class="se">\</span>
+<span class="s2">    1100011010010110111001100111001000000111100101101111011101010111001000100</span><span class="se">\</span>
+<span class="s2">    0000110001001110010011000010110100101101110001000000110110001101001011010</span><span class="se">\</span>
+<span class="s2">    1101100101001000000110000100100000011100000110111101101001011100110110111</span><span class="se">\</span>
+<span class="s2">    1011011100110111101110101011100110010000001101101011101010111001101101000</span><span class="se">\</span>
+<span class="s2">    01110010011011110110111101101101&quot;</span>
     <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">binstring</span><span class="p">)</span> <span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FFrom hex to bin with success!&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">True</span>
@@ -13156,11 +13199,13 @@ Basicamente recebemos como
         output: a string anterior em base64</p>
 <p>Mas antes de partírmos pro código é necessário saber como <em>essas coisas</em> de base64 funcionam</p>
 <h3 id="o-que-&#233;-base64-?">o que &#233; base64 ?<a class="anchor-link" href="#o-que-&#233;-base64-?">&#182;</a></h3>
-<pre><code>    É uma forma de encoding usada principalmente para transmissão de dados com propósito de manter a 'integridade', ou seja, aquilo que enviamos é aquilo que chegará do outro lado. 
+<pre><code>    É uma forma de encoding usada principalmente para transmissão de
+    dados com propósito de manter a 'integridade'. Ou seja, aquilo que
+    enviamos é aquilo que chegará do outro lado. 
 
 </code></pre>
-<p>Base64 está longe de ser um protocolo considerado seguro, qualquer um com acesso a um computador conseguiria decodificar a mensagem que ele utiliza. Ainda mais, qualquer um que soubesse como o algorítmo funciona conseguiria decodificar a mensagem transmitida na mão - por mais que isso possa demorar algum tempo. Entretanto, ela continua sendo utilizado até hoje  pois mantém a integridade dos dados transmitidos.</p>
-<h4 id="Ok,-mas-porque-nao-enviar-os-bytes-crus-do-que-queremos-transmitir-ao-inv&#233;s-de-transformar-em-outra-mensagem-?">Ok, mas porque nao enviar os bytes crus do que queremos transmitir ao inv&#233;s de transformar em outra mensagem ?<a class="anchor-link" href="#Ok,-mas-porque-nao-enviar-os-bytes-crus-do-que-queremos-transmitir-ao-inv&#233;s-de-transformar-em-outra-mensagem-?">&#182;</a></h4><p>Tranformar os bytes crus em outras 'letras' é importante porque, ao enviar uma imagem, ou binario pra outra pessoa, dependendo do protocolo que esteja sendo utilizado podemos ter alguns conflitos entre o arquivo enviado e o protocolo (conflitos do tipo: caracteres inválidos, entre outros), ou seja, não teríamos certeza se o que enviamos chega da forma que queremos do outro lado.</p>
+<p>Base64 está longe de ser um protocolo considerado seguro, qualquer um com acesso a um computador conseguiria decodificar a mensagem que ele encoda. Ainda mais, qualquer um que soubesse como o algorítmo funciona conseguiria decodificar a mensagem transmitida na mão - por mais que isso possa demorar algum tempo. Entretanto, ela continua sendo utilizado até hoje pois mantém a integridade dos dados transmitidos.</p>
+<h4 id="Ok,-mas-porque-nao-enviar-os-bytes-crus-do-que-queremos-transmitir-ao-inv&#233;s-de-transformar-em-outra-mensagem-?">Ok, mas porque nao enviar os bytes crus do que queremos transmitir ao inv&#233;s de transformar em outra mensagem ?<a class="anchor-link" href="#Ok,-mas-porque-nao-enviar-os-bytes-crus-do-que-queremos-transmitir-ao-inv&#233;s-de-transformar-em-outra-mensagem-?">&#182;</a></h4><p>Tranformar os bytes crus em 'letras' é importante porque, ao enviar uma imagem ou binario pra outra pessoa, dependendo do protocolo que esteja sendo utilizado podemos ter alguns conflitos entre o arquivo enviado e o protocolo (conflitos do tipo: caracteres inválidos, entre outros), ou seja, não teríamos certeza se o que enviamos chega da forma que queremos do outro lado.</p>
 <p>A citação a baixo explicita muito bem o porque de usarmos base64, achei importante colocá-la aqui em sua forma original.</p>
 <p><a href="https://base64.guru/learn/what-is-base64"><em>To figuratively understand why Base64 was invented, imagine that during a phone call Alice wants to send an image to Bob. The first problem is that she cannot simply describe how the image looks, because Bob needs an exact copy. In this case, Alice may convert the image into the binary system and dictate to Bob the binary digits (bits), after that he will be able to convert them back to the original image. The second problem is that the tariffs for phone calls are too expensive and dictate each byte as 8 binary digits will last too long. To reduce costs, Alice and Bob agree to use a more efficient data transfer method by using a special alphabet, which replaces every “six digits” with one “letter”.</em></a></p>
 <h4 id="Como-esse-encoding-funciona-?">Como esse encoding funciona ?<a class="anchor-link" href="#Como-esse-encoding-funciona-?">&#182;</a></h4><p>Bytes são comumente separados de 8 em 8 bits, ao utilizarmos base64 iremos repartir esses bytes de 6 em 6 bits, o que faz com que cada 3 bytes anteriores formem 4 novos bytes (3<em>8 = 4</em>6).
@@ -13172,11 +13217,13 @@ Dado um conjunto de bits, por exemplo :</p>
     011110 010111 010101 110010 011010 01
 
     Mas, nos deparamos com um problema, o ultimo conjunto nao está completo. 
-    Para completarmos precisamos aplicar o que chamamos de padding (explicado mais a baixo)
+    Para completarmos precisamos aplicar o que chamamos de padding (explicado 
+    mais a baixo) 
     Agora completamos com 0
     011110 010111 010101 110010 011010 010000
 
-    Agora convertemos cada um desses bytes em seu numero decimal correspondente e depois consultamos sua posição na tabela do base64
+    Agora convertemos cada um desses bytes em seu numero decimal correspondente e 
+    depois consultamos sua posição na tabela do base64
     30     23     21     50     26     16
     ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ [&lt;-tabela]
     começamos a contar do A, de forma que o caracter na posição 30 é o e, 23 = X
@@ -13186,6 +13233,7 @@ Dado um conjunto de bits, por exemplo :</p>
     (os == serão explicados mais abaixo) 
     por fim, temos que  : 
         yuri virou exvyaq==
+
 
 
 </code></pre>
@@ -13199,52 +13247,6 @@ Dado um conjunto de bits, por exemplo :</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[162]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">B64</span> <span class="o">=</span> <span class="s2">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&quot;</span>
-<span class="c1"># decode base64</span>
-<span class="c1"># input: binary string</span>
-<span class="k">def</span> <span class="nf">b64encode</span><span class="p">(</span><span class="n">bin_str</span><span class="p">):</span>
-    <span class="n">bin_group</span> <span class="o">=</span> <span class="n">textwrap</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="n">bin_str</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># separa em conjuntos de 6 [&#39;000000&#39; &#39;00000&#39; ...]</span>
-<span class="c1">#     print(bin_group)</span>
-    
-    <span class="n">total_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bin_group</span><span class="p">)</span>
-
-    <span class="c1">#fixing last house</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">if</span> <span class="s1">&#39;1&#39;</span> <span class="ow">in</span> <span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-            <span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="s2">&quot;0000==&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="s2">&quot;==&quot;</span>
-    <span class="k">elif</span>  <span class="nb">len</span><span class="p">(</span><span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span> 
-        <span class="k">if</span> <span class="s1">&#39;1&#39;</span> <span class="ow">in</span> <span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-            <span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="s2">&quot;00=&quot;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">bin_group</span><span class="p">[</span><span class="n">total_len</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="s2">&quot;=&quot;</span>
-
-    <span class="n">ans</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">bin_group</span><span class="p">:</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="s2">&quot;=&quot;</span> <span class="ow">in</span> <span class="n">i</span> <span class="p">:</span>
-            <span class="c1"># int(i,2) converte pra decimal</span>
-            <span class="n">ans</span> <span class="o">+=</span> <span class="n">B64</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">)]</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">i2</span>  <span class="o">=</span> <span class="n">i</span>
-            <span class="n">tmp</span> <span class="o">=</span> <span class="n">i2</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-            <span class="n">ans</span> <span class="o">+=</span> <span class="n">B64</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="mi">2</span><span class="p">)]</span>
-
-
-    <span class="c1">#print(ans)</span>
-    <span class="k">return</span> <span class="n">ans</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13254,8 +13256,9 @@ Dado um conjunto de bits, por exemplo :</p>
 <pre><code>1 2 3 4 5 6 7 8 9 A B C D E F
 
 </code></pre>
-<h3 id="Porque-utilizamos-hexadecimal-?">Porque utilizamos hexadecimal ?<a class="anchor-link" href="#Porque-utilizamos-hexadecimal-?">&#182;</a></h3><p>Principalmente pelo fator compressão - apenas com dois digitos hexadecimais conseguimos expressar de 0-255, e, também, pela compatibilidade com "binário"/ base2, visto que 2^4 é 16, o ponto aqui é que :
- <img src="https://miro.medium.com/max/652/1*1NGffiR_VdV4F7DKSyJ70A.png" alt="alt text"></p>
+<h3 id="Porque-utilizamos-hexadecimal-?">Porque utilizamos hexadecimal ?<a class="anchor-link" href="#Porque-utilizamos-hexadecimal-?">&#182;</a></h3><p>Principalmente pelo fator compressão - apenas com dois digitos hexadecimais conseguimos expressar de 0-255, e, também, pela compatibilidade com "binário"/ base2, visto que 2^4 é 16, o ponto aqui é que :</p>
+<p>(caso a imagem nao renderize: <a href="https://miro.medium.com/max/652/1*1NGffiR_VdV4F7DKSyJ70A.png">https://miro.medium.com/max/652/1*1NGffiR_VdV4F7DKSyJ70A.png</a>)
+ <img src="https://miro.medium.com/max/652/1*1NGffiR_VdV4F7DKSyJ70A.png" alt="imagem"></p>
 <p>Podemos ver que o binario e o decimal nunca se casam, já o binario e o hexa sim (eles se casam no 16 e no 255), ou seja, cada 4 bits do binario ( 1000 = 16 0x10) representa um bit no hexadecimal, e esse alinhamento nos ajuda a representar as coisas, endereços de memoria ..., melhorando a forma de acessos, paginacao ...</p>
 <p>(<a href="https://medium.com/@savas/why-do-we-use-hexadecimal-d6d80b56f026">https://medium.com/@savas/why-do-we-use-hexadecimal-d6d80b56f026</a>
 )</p>
@@ -13265,21 +13268,24 @@ Dado um conjunto de bits, por exemplo :</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[163]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 0000</span>
 <span class="k">def</span> <span class="nf">hex2bin</span><span class="p">(</span><span class="n">hex_str</span><span class="p">):</span>
     <span class="n">int_</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">hex_str</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
     <span class="n">bin_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="c1"># poderiamos usar a funcao a baixo, mas codamos na mao a conversao de hexa -&gt; bin</span>
-    <span class="c1"># bin_str2 = str(bin(int_).replace(&quot;0b&quot;, &quot;0&quot;))</span>
+    <span class="c1"># poderiamos usar a funcao a baixo, mas codamos na mao a conversao</span>
+    <span class="c1"># de hexa -&gt; bin --&gt;&gt; bin_str2 = str(bin(int_).replace(&quot;0b&quot;, &quot;0&quot;))</span>
 
     <span class="k">while</span> <span class="n">int_</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> 
         <span class="n">bin_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">int_</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">bin_str</span>
         <span class="n">int_</span> <span class="o">=</span> <span class="n">int_</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
     <span class="n">bin_str</span> <span class="o">=</span>  <span class="s2">&quot;0&quot;</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">bin_str</span><span class="p">))</span> <span class="o">+</span> <span class="n">bin_str</span>
-    <span class="n">bin_str</span> <span class="o">=</span>  <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">bin_str</span> <span class="c1"># por algum motivo ele tira o 0 da frente, segundo um cara na internet isso também acontece com ruby</span>
+    <span class="c1"># por algum motivo ele tira o 0 da frente,</span>
+    <span class="c1"># segundo um cara na internet isso também acontece com ruby</span>
+    
+    <span class="n">bin_str</span> <span class="o">=</span>  <span class="s2">&quot;0&quot;</span> <span class="o">+</span> <span class="n">bin_str</span> 
     
     <span class="k">return</span> <span class="n">bin_str</span>
 </pre></div>
@@ -13291,11 +13297,12 @@ Dado um conjunto de bits, por exemplo :</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[164]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">challenge1</span><span class="p">():</span>
-    <span class="n">binstr</span> <span class="o">=</span> <span class="n">hex2bin</span><span class="p">(</span><span class="s2">&quot;49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d&quot;</span><span class="p">)</span>
+    <span class="n">binstr</span> <span class="o">=</span> <span class="n">hex2bin</span><span class="p">(</span><span class="s2">&quot;49276d206b696c6c696e6720796f757220627261696e206c696b6520</span><span class="se">\</span>
+<span class="s2">    6120706f69736f6e6f7573206d757368726f6f6d&quot;</span><span class="p">)</span>
     <span class="n">ret</span> <span class="o">=</span> <span class="n">b64encode</span><span class="p">(</span><span class="n">binstr</span><span class="p">)</span>
     <span class="n">validator</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
@@ -13343,7 +13350,7 @@ SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">validatorChallenge2</span><span class="p">(</span><span class="n">output</span><span class="p">):</span>
@@ -13352,7 +13359,8 @@ SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Funcionou&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">True</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==ERRO </span><span class="se">\n</span><span class="s2"> sua saída:&quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> saida esperada:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">expected</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==ERRO </span><span class="se">\n</span><span class="s2"> sua saída:&quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">output</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> saida esperada:&quot;</span> <span class="o">+</span>
+              <span class="nb">str</span><span class="p">(</span><span class="n">expected</span><span class="p">))</span>
         <span class="k">return</span> <span class="kc">False</span>
         
 </pre></div>
@@ -13382,7 +13390,7 @@ Já com o XOR, para termos um output 1 podemos ter como entrada 0 ou 1 e para te
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
@@ -13392,7 +13400,8 @@ Já com o XOR, para termos um output 1 podemos ter como entrada 0 ou 1 e para te
     <span class="n">tam</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">in1</span><span class="p">)</span> <span class="c1"># tem o mesmo tamanho os dois</span>
     <span class="n">ans</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">in1</span><span class="p">)):</span>
-        <span class="n">ans</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">in1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">^</span> <span class="nb">int</span><span class="p">(</span><span class="n">in2</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>  <span class="c1"># int pra converter de char/string pra int</span>
+        <span class="c1"># int pra converter de char/string pra int</span>
+        <span class="n">ans</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">in1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">^</span> <span class="nb">int</span><span class="p">(</span><span class="n">in2</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>  
     <span class="k">return</span> <span class="n">ans</span>
 </pre></div>
 
@@ -13403,7 +13412,7 @@ Já com o XOR, para termos um output 1 podemos ter como entrada 0 ou 1 e para te
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">str1</span> <span class="o">=</span> <span class="s2">&quot;1c0111001f010100061a024b53535009181c&quot;</span>
@@ -13469,18 +13478,20 @@ letra por letra.</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">str1</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;Burning &#39;em, if you ain&#39;t quick and nimble</span><span class="se">\n</span><span class="s2">I go crazy when I hear a cymbal&quot;</span>
-<span class="n">key</span>  <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;ICE&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">str1</span> <span class="o">=</span> <span class="n">b</span><span class="s2">&quot;Burning &#39;em, if you ain&#39;t quick and nimble</span><span class="se">\n</span><span class="s2">I go crazy when I hear</span><span class="se">\</span>
+<span class="s2"> a cymbal&quot;</span>
+<span class="n">key</span>  <span class="o">=</span> <span class="n">b</span><span class="s2">&quot;ICE&quot;</span>
 
 <span class="c1"># zerofill deixa os dois bytes, o da chave e o da string do mesmo tamanho .</span>
 <span class="c1"># ele coloca zeros na frente até terem o mesmo tamanho</span>
 <span class="k">def</span> <span class="nf">zerofill</span><span class="p">(</span><span class="n">st</span><span class="p">,</span><span class="n">l</span><span class="p">):</span>
     <span class="k">return</span> <span class="s1">&#39;0&#39;</span><span class="o">*</span><span class="p">(</span><span class="n">l</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">st</span><span class="p">))</span> <span class="o">+</span> <span class="n">st</span>
 
-<span class="c1"># esse xor2xor2 eh a mesma coisa que o xor2xor, eu so mudei ele porque estava tendo problemas e achei que poderia ser ele</span>
+<span class="c1"># esse xor2xor2 eh a mesma coisa que o xor2xor, eu so mudei ele porque estava </span>
+<span class="c1"># tendo problemas e achei que poderia ser ele</span>
 <span class="c1"># e,claro, ele usa list comprehension</span>
 <span class="c1"># como gostei da solucao com listcomprehension resolvei deixar</span>
 <span class="k">def</span> <span class="nf">xor2xor2</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="n">in2</span><span class="p">):</span>
@@ -13488,7 +13499,7 @@ letra por letra.</code></pre>
 <span class="sd">    tam = len(in1) # tem o mesmo tamanho os dois</span>
 <span class="sd">    ans = &quot;&quot;</span>
 <span class="sd">    for i in range(0, len(in1)):</span>
-<span class="sd">        ans += str(int(in1[i]) ^ int(in2[i]))  # int pra converter de char/string pra int</span>
+<span class="sd">        ans += str(int(in1[i]) ^ int(in2[i])) </span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="k">return</span> <span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">in1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">^</span> <span class="nb">int</span><span class="p">(</span><span class="n">in2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">in1</span><span class="p">))])</span>
 <span class="k">def</span> <span class="nf">ch5</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">key</span><span class="p">):</span>
@@ -13508,9 +13519,13 @@ letra por letra.</code></pre>
         <span class="n">bits_string</span><span class="o">=</span>  <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">xx2</span><span class="p">))</span>
         
         <span class="c1"># esse if so funciona no caso desse exercicio</span>
-        <span class="c1"># por alguma razao, como boa parte das coisas tentei fazer handmade, por alguma razao ao trabalhar com os bits</span>
-        <span class="c1"># o python ao inves de colocar 0x0b 0x0a e 0x0c, ele coloca apenas 0xa 0xb 0xc. </span>
-        <span class="c1"># e esses bits que ele comeu fizeram falta na  resposta final. O codigo abaixo foi um remendo pra isso ai.</span>
+        <span class="c1"># por alguma razao, como boa parte das coisas tentei fazer handmade,</span>
+        <span class="c1"># por alguma razao ao trabalhar com os bits</span>
+        <span class="c1"># o python ao inves de colocar 0x0b 0x0a e 0x0c, ele coloca apenas</span>
+        <span class="c1"># 0xa 0xb 0xc. </span>
+        <span class="c1"># e esses bits que ele comeu fizeram falta na  resposta final. </span>
+        <span class="c1"># O codigo abaixo foi um remendo pra isso ai.</span>
+
         <span class="n">value</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">bits_string</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
         <span class="n">carelist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0xa&#39;</span><span class="p">,</span><span class="s1">&#39;0xb&#39;</span><span class="p">,</span><span class="s1">&#39;0xc&#39;</span><span class="p">,</span><span class="s1">&#39;0xd&#39;</span><span class="p">,</span><span class="s1">&#39;0xe&#39;</span><span class="p">,</span><span class="s1">&#39;0xf&#39;</span><span class="p">]</span>
         <span class="k">if</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">carelist</span><span class="p">:</span>
@@ -13528,11 +13543,17 @@ letra por letra.</code></pre>
 <span class="n">v</span> <span class="o">=</span> <span class="n">ch5</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span><span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;0x&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 
-<span class="n">expected</span> <span class="o">=</span> <span class="s2">&quot;0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324272765272a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f&quot;</span>
+<span class="n">expected</span> <span class="o">=</span> <span class="s2">&quot;0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324</span><span class="se">\</span>
+<span class="s2">272765272a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27</span><span class="se">\</span>
+<span class="s2">282f&quot;</span>
 <span class="k">assert</span><span class="p">(</span><span class="n">v</span> <span class="o">==</span> <span class="n">expected</span><span class="p">)</span>
 
-<span class="c1"># A minha resposta tinha 3 bits de diferença da original, e eu passei boas 3 horas tentando entender o porque</span>
-<span class="c1"># basicamente, como eu fiz tudo handmade - ou quase tudo- o python ao inves de colocar  e 0x0b 0x0a e 0x0c, ele coloca apenas 0xa 0xb 0xc, e os 3 zeros que ele &#39;come&#39; são os que estão faltando.</span>
+<span class="c1"># A minha resposta tinha 3 bits de diferença da original, e eu passei boas 3</span>
+<span class="c1"># horas tentando entender o porque</span>
+<span class="c1"># basicamente, como eu fiz tudo handmade - ou quase tudo- o python ao inves de</span>
+<span class="c1"># colocar  e 0x0b 0x0a e 0x0c, ele coloca apenas 0xa 0xb 0xc, e os 3 zeros que </span>
+<span class="c1"># ele &#39;come&#39; são os que estavam faltando. Por isso fiz a solucao (gambiarra) do </span>
+<span class="c1"># carelist</span>
 </pre></div>
 
     </div>
@@ -13560,7 +13581,7 @@ letra por letra.</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span> 
