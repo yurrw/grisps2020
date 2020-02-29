@@ -39,7 +39,7 @@ func decrypt(fileName string, key int) {
 
 	for i, v := range f { //i: indice, v: valor
 		// removo do byte que ta la o que foi somado que vimos no descompilado do 2c6V
-		_, err := file2RW.WriteAt([]byte{uint8(v) - uint8(key)}, int64(i))
+		_, err := file2RW.WriteAt([]byte{uint8(v) - uint8(key)}, int64(i)) // writeat(oqueescrever, onde)
 		check(err)
 	}
 
