@@ -11,4 +11,4 @@
     ou
      > ./[TAG]RevENG/Dcrypt  
 
-o arquivo precisa estar no mesmo local onde a pasta executada está, isto é, "./$USER/".
+o arquivo precisa estar no mesmo local onde a pasta 'encriptada' está, isto é, "./$USER/".
