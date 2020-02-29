@@ -1,4 +1,4 @@
-#Dcrypter
+# Dcrypter
 
     De forma simples, o código recupera a chave utilizada para 'encriptar' os arquivos, que está guardada em /tmp/key.
     Depois disso ele percorre todos os arquivos da pasta e, uma vez que para encriptar foi somado a key + cada_caracter_do_arquivo
