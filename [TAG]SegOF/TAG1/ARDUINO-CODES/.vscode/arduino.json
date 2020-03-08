@@ -1,0 +1,4 @@
+{
+    "board": "arduino:avr:leonardo",
+    "port": "/dev/ttyS0"
+}
